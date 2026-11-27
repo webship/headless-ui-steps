@@ -176,8 +176,9 @@ not filed:
    made (it starts with no value): its scenario is tagged `@js-warn`, so the warning is reported, not failed on.
 5. **A disabled tab says so after its name** ("Company(disabled)"): a tab is found by its name, else by the start of its
    text.
-6. **The Vue playground's select list starts on a person picked at random** (`Math.random()` in its setup): its scenario
-   reads only what it chose.
+6. **The playgrounds' select lists and search lists start on a person picked at random** (`Math.random()` when they
+   mount, on both lines): their scenarios, the ones that must fail among them, choose first and read only what they
+   chose.
 
 ## Headless UI's own tests and this pack
 

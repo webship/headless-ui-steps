@@ -47,9 +47,11 @@ Feature: The components of the demo, asserted wrong
     Given I go to "/listbox/listbox-with-pure-tailwind"
     When I choose "Nobody at all" in the "Assigned to" select list
 
+  # The example starts on a person picked at random: the scenario chooses one first, so the last step always fails.
   Scenario: An option the select list does not show
-    Fails with: Expected the "Assigned to" select list to show "Tom Cook", but it shows
+    Fails with: Expected the "Assigned to" select list to show "Tom Cook", but it shows "Wade Cooper".
     Given I go to "/listbox/listbox-with-pure-tailwind"
+    When I choose "Wade Cooper" in the "Assigned to" select list
     Then the "Assigned to" select list should show "Tom Cook"
 
   Scenario: An option the search list does not offer for what is typed

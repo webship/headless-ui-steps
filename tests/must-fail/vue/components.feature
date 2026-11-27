@@ -13,9 +13,11 @@ Feature: The components of the Vue playground, asserted wrong
     Given I go to "/menu/menu-with-transition"
     When I choose "Preferences" from the "Options" drop-down menu
 
+  # The example starts on a person picked at random: the scenario chooses one first, so the last step always fails.
   Scenario: An option the select list does not show
-    Fails with: Expected the "Assigned to" select list to show "Tom Cook", but it shows
+    Fails with: Expected the "Assigned to" select list to show "Tom Cook", but it shows "Wade Cooper".
     Given I go to "/listbox/listbox"
+    When I choose "Wade Cooper" in the "Assigned to" select list
     Then the "Assigned to" select list should show "Tom Cook"
 
   Scenario: A switch that is off
