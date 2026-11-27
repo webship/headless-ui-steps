@@ -1,0 +1,3 @@
+# Two of the playground's examples use packages released before React 19 (framer-motion 6 and react-flatpickr 3, the
+# majors the playground asks for), whose peer ranges stop at React 18: npm leaves their peers to the app.
+legacy-peer-deps=true
