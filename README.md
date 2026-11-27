@@ -258,6 +258,6 @@ MIT
 
 ## Logo
 
-The logo is Simple Icons' Headless UI icon (`icons/headlessui.svg` of simple-icons 16.37.0, CC0-1.0), unmodified: it
-names the library the pack tests. Headless UI and its mark are Tailwind Labs'. It is not covered by this package's
-licence.
+The logo is Simple Icons' Headless UI icon (`icons/headlessui.svg` of simple-icons 16.37.0, CC0-1.0), in the colour
+the set lists for the brand (`#66E3FF`); its path is unmodified. It names the library the pack tests. Headless UI and
+its mark are Tailwind Labs'. It is not covered by this package's licence.
