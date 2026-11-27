@@ -1,0 +1,4 @@
+/* The styles of the starter the plugin makes with --minimal (demo-src/assemble.sh --minimal): Tailwind CSS 4 and its
+   forms plugin, the way Tailwind's guide for Vite sets them up. The demo uses the playground's own styles instead. */
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
